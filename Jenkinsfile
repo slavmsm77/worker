@@ -17,7 +17,7 @@ pipeline{
         stage("Build Docker image"){
             steps{
                 script{
-                    sh "docker build . -t ${registry}/${ms}:${tag} --platform "linux/amd64/v8"  "
+                    sh "docker build . -t ${registry}/${ms}:${tag} --platform \"linux/amd64/v8\"  "
                 }
             }
         }
